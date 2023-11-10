@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:mars_app/data/api/api.dart';
 import 'package:mars_app/generated/l10n.dart';
 import 'package:mars_app/presentation/resources/router_manger.dart';
 import 'package:mars_app/presentation/resources/string_manger.dart';
@@ -53,6 +54,12 @@ class HomView extends StatelessWidget {
               context.push(Routes.settingsRoute);
             },
             child: Text(S.of(context).apparTitle)),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+        await   Api().getLatestPhotos();
+        },
+        child: const Icon(Icons.webhook),
       ),
     );
   }
