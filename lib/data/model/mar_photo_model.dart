@@ -1,10 +1,11 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:equatable/equatable.dart';
 part 'mar_photo_model.g.dart';
 
 @HiveType(typeId: 0)
 @JsonSerializable(createToJson: false)
-class MarsPhotoModel extends HiveObject {
+class MarsPhotoModel extends Equatable {
   @HiveField(0)
   final int id;
   @HiveField(1)
@@ -28,6 +29,16 @@ class MarsPhotoModel extends HiveObject {
   static DateTime _dateTime(String date) => DateTime.parse(date);
   factory MarsPhotoModel.formJson(Map<String, dynamic> json) =>
       _$MarsPhotoModelFromJson(json);
+
+  @override
+  
+  List<Object?> get props => [
+        id,
+        sol,
+        earthDate,
+        camera,
+        imgSrc,
+      ];
 }
 
 @HiveType(typeId: 1)
