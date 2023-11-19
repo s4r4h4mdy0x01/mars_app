@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:mars_app/data/api/api.dart';
+import 'package:mars_app/data/model/mar_photo_model.dart';
+import 'package:mars_app/data/repo/repo.dart';
 import 'package:mars_app/generated/l10n.dart';
 import 'package:mars_app/presentation/resources/router_manger.dart';
 import 'package:mars_app/presentation/resources/string_manger.dart';
@@ -57,7 +59,7 @@ class HomView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-        await   Api().getLatestPhotos();
+          await Repo().fetchPhotoByDate(DateTime(2023,10,9));
         },
         child: const Icon(Icons.webhook),
       ),

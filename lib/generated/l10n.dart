@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Mars Photo`
+  /// `Mars Rovers Photographies`
   String get apparTitle {
     return Intl.message(
-      'Mars Photo',
+      'Mars Rovers Photographies',
       name: 'apparTitle',
       desc: '',
       args: [],

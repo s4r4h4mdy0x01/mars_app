@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:mars_app/data/db/init_hive.dart';
 import 'package:mars_app/presentation/resources/router_manger.dart';
 import 'package:mars_app/presentation/resources/string_manger.dart';
 import 'package:sizer/sizer.dart';
 import 'generated/l10n.dart';
 import 'package:mars_app/presentation/resources/color_manger.dart';
 import 'package:mars_app/presentation/resources/theme_manger.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Hive.initFlutter();
-  await Hive.openBox(StringManger.onpenBox);
+  await initHive();
   runApp(const MyApp());
 }
 
