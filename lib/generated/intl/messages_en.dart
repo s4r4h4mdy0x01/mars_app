@@ -24,7 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "apparTitle":
             MessageLookupByLibrary.simpleMessage("Mars Rovers Photographies"),
+        "dark": MessageLookupByLibrary.simpleMessage("Dark"),
+        "date": MessageLookupByLibrary.simpleMessage("Date"),
+        "dateByPhotos": MessageLookupByLibrary.simpleMessage("Date By Photos"),
+        "headerDrewer": MessageLookupByLibrary.simpleMessage("To Mars"),
         "lang": MessageLookupByLibrary.simpleMessage("English"),
+        "latestPhotos": MessageLookupByLibrary.simpleMessage("Latest Photos"),
+        "light": MessageLookupByLibrary.simpleMessage("Light"),
+        "subTitleAppBar": MessageLookupByLibrary.simpleMessage(
+            "on this website you can find photos of Rovers on Mars. It uses NASA Apis to  show you all the details about the rovers, including their images . Some dates has not results so try one day before or after ."),
         "theme": MessageLookupByLibrary.simpleMessage("Theme")
       };
 }

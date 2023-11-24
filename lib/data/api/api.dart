@@ -13,7 +13,8 @@ class Api {
           receiveTimeout: const Duration(seconds: 10),
           method: 'GET',
           queryParameters: {
-            'api_key': 'DN9uIpqHTzotJCPDrhD6zRnNMHeemrypLCcWB8q8'// lock app is task
+            'api_key':
+                'DN9uIpqHTzotJCPDrhD6zRnNMHeemrypLCcWB8q8' // lock app is task
           }),
     );
     _dio.interceptors.add(RetryInterceptor(
@@ -60,5 +61,20 @@ class Api {
       }
     }
     return [];
+  }
+
+  Future<Map<String, dynamic>> getRoverData() async {
+    try {
+      final Response response = await _dio.request('');
+      print(response.data['rover']['max_date']);
+      return response.data['rover'];
+    } catch (e) {
+      if (e is DioException) {
+        print('Dio Exception ${e.toString()}');
+      } else {
+        print('other error ...! ${e.toString()}');
+      }
+    }
+    return {};
   }
 }

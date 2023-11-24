@@ -1,5 +1,12 @@
 {
     "apparTitle":"Mars Rovers Photographies",
     "lang":"English",
-    "theme":"Theme"
+    "theme":"Theme",
+    "subTitleAppBar":"on this website you can find photos of Rovers on Mars. It uses NASA Apis to  show you all the details about the rovers, including their images . Some dates has not results so try one day before or after .",
+    "dark":"Dark",
+    "light":"Light",
+    "headerDrewer":"To Mars",
+    "date":"Date",
+    "latestPhotos":"Latest Photos",
+    "dateByPhotos": "Date By Photos"
 }

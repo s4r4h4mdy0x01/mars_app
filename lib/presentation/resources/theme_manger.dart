@@ -7,7 +7,7 @@ final textTheme = TextTheme(
     fontWeight: FontWeight.w400,
     fontSize: 57.sp,
     height: 64.sp / 57.sp,
-    letterSpacing: -0.25,
+    letterSpacing: -0.25.sp,
   ),
   displayMedium: GoogleFonts.inter(
     fontWeight: FontWeight.w400,
@@ -29,56 +29,56 @@ final textTheme = TextTheme(
     fontSize: 28.sp,
     height: 36.sp / 28.sp,
   ),
-  // headlineSmall: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w400,
-  //   fontSize: 24,
-  //   height: 32 / 24,
-  // ),
-  // titleLarge: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w700,
-  //   fontSize: 22,
-  //   height: 28 / 22,
-  // ),
-  // titleMedium: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w600,
-  //   fontSize: 16,
-  //   height: 24 / 16,
-  //   letterSpacing: 0.1,
-  // ),
-  // titleSmall: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w600,
-  //   fontSize: 14,
-  //   height: 20 / 14,
-  //   letterSpacing: 0.1,
-  // ),
-  // labelLarge: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w700,
-  //   fontSize: 14,
-  //   height: 20 / 14,
-  // ),
-  // labelMedium: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w700,
-  //   fontSize: 12,
-  //   height: 16 / 12,
-  // ),
-  // labelSmall: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w700,
-  //   fontSize: 11,
-  //   height: 16 / 11,
-  // ),
-  // bodyLarge: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w400,
-  //   fontSize: 16,
-  //   height: 24 / 16,
-  // ),
-  // bodyMedium: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w400,
-  //   fontSize: 14,
-  //   height: 20 / 14,
-  // ),
-  // bodySmall: GoogleFonts.inter(
-  //   fontWeight: FontWeight.w400,
-  //   fontSize: 12,
-  //   height: 16 / 12,
-  // ),
+  headlineSmall: GoogleFonts.inter(
+    fontWeight: FontWeight.w400,
+    fontSize: 24.sp,
+    height: 32.sp / 24.sp,
+  ),
+  titleLarge: GoogleFonts.inter(
+    fontWeight: FontWeight.w700,
+    fontSize: 22.sp,
+    height: 28.sp / 22.sp,
+  ),
+  titleMedium: GoogleFonts.inter(
+    fontWeight: FontWeight.w600,
+    fontSize: 16.sp,
+    height: 24.sp / 16.sp,
+    letterSpacing: 0.1,
+  ),
+  titleSmall: GoogleFonts.inter(
+    fontWeight: FontWeight.w600,
+    fontSize: 14.sp,
+    height: 20.sp / 14.sp,
+    letterSpacing: 0.1,
+  ),
+  labelLarge: GoogleFonts.inter(
+    fontWeight: FontWeight.w700,
+    fontSize: 14.sp,
+    height: 20.sp / 14.sp,
+  ),
+  labelMedium: GoogleFonts.inter(
+    fontWeight: FontWeight.w700,
+    fontSize: 12.sp,
+    height: 16.sp / 12.sp,
+  ),
+  labelSmall: GoogleFonts.inter(
+    fontWeight: FontWeight.w700,
+    fontSize: 11.sp,
+    height: 16.sp / 11.sp,
+  ),
+  bodyLarge: GoogleFonts.inter(
+    fontWeight: FontWeight.w400,
+    fontSize: 16.sp,
+    height: 24.sp / 16.sp,
+  ),
+  bodyMedium: GoogleFonts.inter(
+    fontWeight: FontWeight.w400,
+    fontSize: 14.sp,
+    height: 20.sp / 14.sp,
+  ),
+  bodySmall: GoogleFonts.inter(
+    fontWeight: FontWeight.w400,
+    fontSize: 12.sp,
+    height: 16.sp / 12.sp,
+  ),
 );

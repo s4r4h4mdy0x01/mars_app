@@ -23,7 +23,15 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "apparTitle": MessageLookupByLibrary.simpleMessage("صور روفرز المريخ"),
+        "dark": MessageLookupByLibrary.simpleMessage("داكن"),
+        "date": MessageLookupByLibrary.simpleMessage("تاريخ"),
+        "dateByPhotos": MessageLookupByLibrary.simpleMessage("الصور بالتاريخ"),
+        "headerDrewer": MessageLookupByLibrary.simpleMessage("الى المريخ"),
         "lang": MessageLookupByLibrary.simpleMessage("عربى"),
+        "latestPhotos": MessageLookupByLibrary.simpleMessage("احدث صور"),
+        "light": MessageLookupByLibrary.simpleMessage("فاتح"),
+        "subTitleAppBar": MessageLookupByLibrary.simpleMessage(
+            "فى هذا الموقع ، يمكنك العثور على صور لمركبات على المريخ . يستخدم (ناسا ) ليعرض لك جميع التفاصيل حول المركبات الجوالة، بما في ذلك صورها. بعض التواريخ ليس لها نتائج، لذا حاول قبلها أو بعدها بيوم"),
         "theme": MessageLookupByLibrary.simpleMessage("السمة")
       };
 }

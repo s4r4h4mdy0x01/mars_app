@@ -79,6 +79,76 @@ class S {
       args: [],
     );
   }
+
+  /// `on this website you can find photos of Rovers on Mars. It uses NASA Apis to  show you all the details about the rovers, including their images . Some dates has not results so try one day before or after .`
+  String get subTitleAppBar {
+    return Intl.message(
+      'on this website you can find photos of Rovers on Mars. It uses NASA Apis to  show you all the details about the rovers, including their images . Some dates has not results so try one day before or after .',
+      name: 'subTitleAppBar',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dark`
+  String get dark {
+    return Intl.message(
+      'Dark',
+      name: 'dark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Light`
+  String get light {
+    return Intl.message(
+      'Light',
+      name: 'light',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To Mars`
+  String get headerDrewer {
+    return Intl.message(
+      'To Mars',
+      name: 'headerDrewer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date`
+  String get date {
+    return Intl.message(
+      'Date',
+      name: 'date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Latest Photos`
+  String get latestPhotos {
+    return Intl.message(
+      'Latest Photos',
+      name: 'latestPhotos',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date By Photos`
+  String get dateByPhotos {
+    return Intl.message(
+      'Date By Photos',
+      name: 'dateByPhotos',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

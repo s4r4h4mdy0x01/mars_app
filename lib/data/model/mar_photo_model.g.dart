@@ -103,7 +103,7 @@ MarsPhotoModel _$MarsPhotoModelFromJson(Map<String, dynamic> json) =>
     MarsPhotoModel(
       id: json['id'] as int,
       sol: json['sol'] as int,
-      camera: Camera.formJson(json['camera'] as Map<String, dynamic>),
+      camera: Camera.fromJson(json['camera'] as Map<String, dynamic>),
       imgSrc: json['img_src'] as String,
       earthDate: MarsPhotoModel._dateTime(json['earth_date'] as String),
     );

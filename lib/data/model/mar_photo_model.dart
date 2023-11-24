@@ -11,7 +11,7 @@ class MarsPhotoModel extends Equatable {
   @HiveField(1)
   final int sol;
   @HiveField(2)
-  @JsonKey(fromJson: Camera.formJson)
+  @JsonKey(fromJson: Camera.fromJson)
   final Camera camera;
   @HiveField(3)
   @JsonKey(name: 'img_src')
@@ -27,7 +27,7 @@ class MarsPhotoModel extends Equatable {
     required this.earthDate,
   });
   static DateTime _dateTime(String date) => DateTime.parse(date);
-  factory MarsPhotoModel.formJson(Map<String, dynamic> json) =>
+  factory MarsPhotoModel.fromJson(Map<String, dynamic> json) =>
       _$MarsPhotoModelFromJson(json);
 
   @override
@@ -60,5 +60,5 @@ class Camera extends HiveObject {
     required this.roverId,
     required this.fullName,
   });
-  factory Camera.formJson(Map<String, dynamic> json) => _$CameraFromJson(json);
+  factory Camera.fromJson(Map<String, dynamic> json) => _$CameraFromJson(json);
 }
