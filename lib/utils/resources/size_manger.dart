@@ -25,6 +25,7 @@ class AppPadding {
 }
 
 class AppSize {
+  static double s1_3 = 1.3.sp;
   static double s1_5 = 1.5.sp;
   static double s4 = 4.0.sp;
   static double s = .0.sp;
@@ -36,4 +37,7 @@ class AppSize {
   static double s18 = 18.0.sp;
   static double s20 = 20.0.sp;
   static double s22 = 22.0.sp;
+  static double s90 = 90.sp;
+  static double s100 = 100.0.sp;
+   static double s130 = 130.0.sp;
 }

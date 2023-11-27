@@ -22,6 +22,7 @@ class MarsCubit extends Cubit<MarsState> {
   bool isPhotosLoaded = false;
   bool isloading = false;
   List<MarsPhotoModel> photosList = [];
+   //List<Rover> photosLi = [];
   final ScrollController scrollController = ScrollController();
   void resetHomePage() {
     photosList = [];

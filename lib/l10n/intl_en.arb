@@ -8,5 +8,6 @@
     "headerDrewer":"To Mars",
     "date":"Date",
     "latestPhotos":"Latest Photos",
-    "dateByPhotos": "Date By Photos"
+    "dateByPhotos": "Date By Photos",
+    "close":"Close"
 }
