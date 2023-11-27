@@ -5,7 +5,7 @@ import 'package:mars_app/data/api/api.dart';
 import 'package:mars_app/data/db/local_db.dart';
 import 'package:mars_app/data/model/mar_photo_model.dart';
 import 'package:mars_app/data/model/rover_model.dart';
-import 'package:mars_app/presentation/resources/string_manger.dart';
+import 'package:mars_app/utils/resources/string_manger.dart';
 
 class Repo {
   late Api _api;
@@ -21,11 +21,11 @@ class Repo {
     return photos;
   }
 
-  Future<List<MarsPhotoModel>> fetchPhotoByDate(DateTime earthDate) async {
+  Future<List<MarsPhotoModel>> fetchPhotoByDate(DateTime earthDate,{int?page}) async {
     bool isOnline = await InternetConnectionChecker().hasConnection;
     if (isOnline == true) {
-      final String formatDate = DateFormat("yyyy-MM-dd").format(earthDate);
-      final data = await _api.getPhotoByDate(formatDate);
+      final String formatDate = DateFormat("yyyy-MM-dd").format(earthDate,);
+      final data = await _api.getPhotoByDate(formatDate,page:page);
       final photos = data.map((e) => MarsPhotoModel.fromJson(e)).toList();
     //  savaDB(photos);
 

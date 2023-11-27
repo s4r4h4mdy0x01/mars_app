@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
 import 'package:mars_app/data/model/mar_photo_model.dart';
 import 'package:mars_app/data/repo/repo.dart';
 
@@ -10,6 +11,7 @@ class MarsCubit extends Cubit<MarsState> {
   MarsCubit({required this.repo}) : super(MarsInitial()) {
     fetchRover();
   }
+  int pageCount = 1;
 
   Future<void> fetchRover() async {
     emit(RoverLoading());
@@ -17,11 +19,34 @@ class MarsCubit extends Cubit<MarsState> {
     emit(RoverSucceeded());
   }
 
-  void fetchDataMars(DateTime? date) async {
+  bool isPhotosLoaded = false;
+  bool isloading = false;
+  List<MarsPhotoModel> photosList = [];
+  final ScrollController scrollController = ScrollController();
+  void resetHomePage() {
+    photosList = [];
+    isPhotosLoaded = true;
+  }
+
+  Future<void> fetchDataMars(DateTime? date, {int? page}) async {
     emit(MarsLoading());
-    final photosList = (date != null)
-        ? await repo.fetchPhotoByDate(date)
+    final lPhotos = (date != null)
+        ? await repo.fetchPhotoByDate(
+            date,
+          )
         : await repo.fetchLatestPhotos();
-    emit(MarsSucceeded(photosList: photosList));
+    isPhotosLoaded = true;
+    photosList.addAll(lPhotos);
+    emit(MarsSucceeded());
+  }
+
+  Future<void> checkScrollPosition(DateTime earthDate) async {
+    if (scrollController.position.pixels ==
+        scrollController.position.maxScrollExtent) {
+      isloading = true;
+      await fetchDataMars(earthDate, page: pageCount++);
+      isloading = false;
+     
+    }
   }
 }

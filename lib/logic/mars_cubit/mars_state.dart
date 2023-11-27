@@ -16,7 +16,7 @@ final class RoverSucceeded extends MarsState {}
 final class MarsLoading extends MarsState {}
 
 final class MarsSucceeded extends MarsState {
-  final List<MarsPhotoModel> photosList;
 
-  const MarsSucceeded({required this.photosList});
+
+
 }

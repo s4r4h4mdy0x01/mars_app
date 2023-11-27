@@ -3,13 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mars_app/data/db/init_hive.dart';
-import 'package:mars_app/presentation/resources/cubit_observer.dart';
-import 'package:mars_app/presentation/resources/router_manger.dart';
-import 'package:mars_app/presentation/resources/string_manger.dart';
+import 'package:mars_app/utils/resources/cubit_observer.dart';
+import 'package:mars_app/utils/resources/router_manger.dart';
+import 'package:mars_app/utils/resources/string_manger.dart';
 import 'package:sizer/sizer.dart';
 import 'generated/l10n.dart';
-import 'package:mars_app/presentation/resources/color_manger.dart';
-import 'package:mars_app/presentation/resources/theme_manger.dart';
+import 'package:mars_app/utils/resources/color_manger.dart';
+import 'package:mars_app/utils/resources/theme_manger.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

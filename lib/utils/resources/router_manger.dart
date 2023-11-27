@@ -2,9 +2,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mars_app/data/repo/repo.dart';
 import 'package:mars_app/logic/mars_cubit/mars_cubit.dart';
-import 'package:mars_app/view/home_view.dart';
-import 'package:mars_app/view/photo_by_date.dart';
-import 'package:mars_app/view/settings_view.dart';
+import 'package:mars_app/ui/view/home_view.dart';
+import 'package:mars_app/ui/view/photo_by_date.dart';
+import 'package:mars_app/ui/view/settings_view.dart';
 
 class Routes {
   static const String PhotoByDateRoute = '/';

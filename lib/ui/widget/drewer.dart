@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:mars_app/presentation/resources/color_manger.dart';
-import 'package:mars_app/presentation/resources/size_manger.dart';
-import 'package:mars_app/presentation/resources/string_manger.dart';
+import 'package:mars_app/utils/resources/color_manger.dart';
+import 'package:mars_app/utils/resources/size_manger.dart';
+import 'package:mars_app/utils/resources/string_manger.dart';
 import 'package:mars_app/generated/l10n.dart';
 
 class DrewarWidget extends StatelessWidget {

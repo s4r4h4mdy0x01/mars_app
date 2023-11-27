@@ -5,10 +5,10 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:mars_app/data/model/rover_model.dart';
 
 import 'package:mars_app/generated/l10n.dart';
-import 'package:mars_app/presentation/resources/router_manger.dart';
-import 'package:mars_app/presentation/resources/string_manger.dart';
+import 'package:mars_app/utils/resources/router_manger.dart';
+import 'package:mars_app/utils/resources/string_manger.dart';
 
-import 'package:mars_app/view/widget/drewer.dart';
+import 'package:mars_app/ui/widget/drewer.dart';
 
 class PhotoByDateView extends StatelessWidget {
   const PhotoByDateView({super.key});
